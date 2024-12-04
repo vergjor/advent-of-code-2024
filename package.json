@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "day01:part1": "ts-node 01-historian-hysteria/solution-part1.ts",
-    "day01:part2": "ts-node 01-historian-hysteria/solution-part2.ts"
+    "day01:part2": "ts-node 01-historian-hysteria/solution-part2.ts",
+    "day02:part1": "ts-node 02-red-nosed-reports/solution-part1.ts"
   },
   "author": "Veronika Gjoreva",
   "license": "ISC",
