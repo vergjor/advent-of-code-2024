@@ -6,7 +6,10 @@
   "scripts": {
     "day01:part1": "ts-node 01-historian-hysteria/solution-part1.ts",
     "day01:part2": "ts-node 01-historian-hysteria/solution-part2.ts",
-    "day02:part1": "ts-node 02-red-nosed-reports/solution-part1.ts"
+    "day02:part1": "ts-node 02-red-nosed-reports/solution-part1.ts",
+    "day03:part1": "ts-node 03-mull-it-over/solution-part1.ts",
+    "day04:part1": "ts-node 04-ceres-search/solution-part1.ts",
+    "day04:part2": "ts-node 04-ceres-search/solution-part2.ts"
   },
   "author": "Veronika Gjoreva",
   "license": "ISC",
