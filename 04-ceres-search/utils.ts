@@ -1,9 +1,5 @@
-type Coordinates = { x: number; y: number; };
-
-function isValidIndex(lastIndex: number, coordinates: Coordinates) {
-    const { x, y } = coordinates;
-    return x >= 0 && x < lastIndex && y >= 0 && y < lastIndex;
-}
+import { Coordinates } from "../types";
+import { isValidIndex } from "../utils";
 
 function countMatches(letters: string[][], coordinates: Coordinates, signCombinations: Coordinates[]) {
     const letterMap = {

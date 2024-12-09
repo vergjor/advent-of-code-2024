@@ -13,7 +13,9 @@
     "day05:part1": "ts-node 05-print-queue/solution-part1.ts",
     "day06:part1": "ts-node 06-guard-gallivant/solution-part1.ts",
     "day07:part1": "ts-node 07-bridge-repair/solution-part1.ts",
-    "day07:part2": "ts-node 07-bridge-repair/solution-part2.ts"
+    "day07:part2": "ts-node 07-bridge-repair/solution-part2.ts",
+    "day08:part1": "ts-node 08-resonant-collinearity/solution-part1.ts",
+    "day08:part2": "ts-node 08-resonant-collinearity/solution-part2.ts"
   },
   "author": "Veronika Gjoreva",
   "license": "ISC",

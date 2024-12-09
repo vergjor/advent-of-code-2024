@@ -1,4 +1,4 @@
-export type Coordinates = { x: number; y: number; };
+import { Coordinates } from "../types";
 
 export function nextMoveCoordinates(guardLocation: Coordinates, map: string[][]) {
     const { x, y } = guardLocation;
@@ -33,8 +33,3 @@ export function hasObstacle(guardLocation: Coordinates, map: string[][]) {
     if (positionOnMap === '#') return true;;
     return false;
 }
-
-export function isFinalMove(lastIndex: number, position: Coordinates) {
-    const { x, y } = position;
-    return x < 0 || x >= lastIndex || y < 0 || y >= lastIndex;
-};

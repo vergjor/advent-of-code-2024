@@ -1,5 +1,7 @@
 import { readFileSync } from "fs";
-import { changeGuardDirection, Coordinates, hasObstacle, isFinalMove, nextMoveCoordinates } from "./utils";
+import { changeGuardDirection, hasObstacle, nextMoveCoordinates } from "./utils";
+import { Coordinates } from "../types";
+import { isValidIndex } from "../utils";
 
 let guardCoordinates: Coordinates;
 const distinctGuardPositions = new Set<string>();
@@ -18,7 +20,7 @@ const guardPatrolMap: string[][] = readFileSync('06-guard-gallivant/input.txt')
 while (true) {
     distinctGuardPositions.add(JSON.stringify(guardCoordinates));
     const nextGuardPosition = nextMoveCoordinates(guardCoordinates, guardPatrolMap);
-    if (isFinalMove(guardPatrolMap.length, nextGuardPosition)) break;
+    if (!isValidIndex(guardPatrolMap.length, nextGuardPosition)) break;
 
     if (hasObstacle(nextGuardPosition, guardPatrolMap)) {
         guardPatrolMap[guardCoordinates.x][guardCoordinates.y] = changeGuardDirection(guardCoordinates, guardPatrolMap);
